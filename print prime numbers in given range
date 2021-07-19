@@ -1,0 +1,41 @@
+//TO PRINT THE PRIME NUMBERS IN THE GIVEN RANGE
+ int prime(int num){
+     int div =0;
+     for(int i =1; i<= num;i++){
+            if(num%i==0){
+                div++;
+            }
+     }
+    if(div ==2){
+        cout<<num<<endl;
+    }
+
+ }
+
+
+
+    int main()
+
+    {
+
+        cout<<"Enter range:";
+
+        int lowerLimit, upperLimit;
+
+        //user input
+
+        cin>>lowerLimit>>upperLimit;
+
+        cout<<"Prime numbers between"<<lowerLimit<<"and"<<upperLimit<<"are:"<<endl;
+
+        //finding prime numbers in the given range
+
+        for(int i=lowerLimit;i<=upperLimit;i++){
+
+            prime(i);
+
+        }
+
+
+
+    }
